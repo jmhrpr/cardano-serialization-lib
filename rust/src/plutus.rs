@@ -492,7 +492,6 @@ impl PlutusList {
 
     pub fn add(&mut self, elem: &PlutusData) {
         self.elems.push(elem.clone());
-        self.definite_encoding = None;
     }
 }
 
