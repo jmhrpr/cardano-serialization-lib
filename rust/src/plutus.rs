@@ -475,6 +475,13 @@ impl PlutusList {
         }
     }
 
+    pub fn new_with_definite() -> Self {
+        Self {
+            elems: Vec::new(),
+            definite_encoding: Some(true),
+        }
+    }
+    
     pub fn len(&self) -> usize {
         self.elems.len()
     }
