@@ -203,7 +203,7 @@ impl Costmdls {
             serializer.write_bytes(cost_model_serializer.finalize()).unwrap();
         }
         let out = serializer.finalize();
-        println!("language_views = {}", hex::encode(out.clone()));
+        //println!("language_views = {}", hex::encode(out.clone()));
         out
     }
 }
